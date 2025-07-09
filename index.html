@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShinemyResume</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">ShinemyResume</a>
+    <ul class="nav-links">
+      <li><a href="how-it-works.html">How it Works</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+    <div class="nav-buttons" id="googleSignInWrapper">
+      <div id="g_id_onload"
+           data-client_id="YOUR_GOOGLE_CLIENT_ID"
+           data-context="signin"
+           data-ux_mode="popup"
+           data-callback="handleGoogleLogin"
+           data-auto_prompt="false"></div>
+
+      <div class="g_id_signin"
+           data-type="standard"
+           data-shape="pill"
+           data-theme="outline"
+           data-text="signin_with"
+           data-size="medium"
+           data-logo_alignment="left"></div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>Optimize Your Resume with <span>ShinemyResume</span></h1>
+    <p>Boost your chances of getting hired by matching your resume with job descriptions.</p>
+    <form id="scan-form">
+      <input type="file" id="resume-input" accept=".pdf,.doc,.docx" required />
+      <textarea id="jobdesc-input" placeholder="Paste job description here..." required></textarea>
+      <button type="submit" class="btn">Scan Resume</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-container">
+    <p>© 2025 ShinemyResume. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

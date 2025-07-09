@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - ShinemyResume</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">ShinemyResume</a>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav-buttons" id="googleSignInWrapper">
+      <div id="g_id_onload"
+           data-client_id="YOUR_GOOGLE_CLIENT_ID"
+           data-context="signin"
+           data-ux_mode="popup"
+           data-callback="handleGoogleLogin"
+           data-auto_prompt="false"></div>
+
+      <div class="g_id_signin"
+           data-type="standard"
+           data-shape="pill"
+           data-theme="outline"
+           data-text="signin_with"
+           data-size="medium"
+           data-logo_alignment="left"></div>
+    </div>
+  </div>
+</nav>
+
+<section class="features" style="margin-top: 3rem;">
+  <div class="container">
+    <h2>Your Dashboard</h2>
+    <p style="margin-bottom: 2rem; font-size: 1.1rem; color: #555;">Welcome to your dashboard! Here you can manage your resume scans and see match reports.</p>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <img src="https://img.icons8.com/ios-filled/64/2d68ff/search.png" />
+        <h3>Scan History</h3>
+        <p>View previous resume/job description match results.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://img.icons8.com/ios-filled/64/2d68ff/upload.png" />
+        <h3>Upload New Resume</h3>
+        <p>Upload and optimize another resume to boost your chances.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://img.icons8.com/ios-filled/64/2d68ff/analytics.png" />
+        <h3>Match Analytics</h3>
+        <p>See trends and insights on your resume scans (simulated).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-container">
+    <p>© 2025 ShinemyResume. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
